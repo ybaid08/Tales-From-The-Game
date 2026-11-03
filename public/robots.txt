@@ -1,0 +1,9 @@
+# Tales from the Game - Robots.txt
+# Technical SEO: Allow search crawlers to index all public storytelling routes
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_dev/
+
+# XML Sitemap Location
+Sitemap: https://talesfromthegame.com/sitemap.xml

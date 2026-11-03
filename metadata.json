@@ -1,0 +1,6 @@
+{
+  "name": "Tales from the Game",
+  "description": "Some Legends Are Never Forgotten. Others Never Got Their Due. Independent cricket storytelling publication exploring iconic moments, legendary players, and overlooked careers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

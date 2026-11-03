@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-warm-ivory: #F5F1E8;
+    --text-ink-black: #191B19;
+    --accent-forest-green: #244936;
+    --accent-muted-gold: #B89558;
+    --surface-white: #FFFFFF;
+    --text-slate-grey: #686B66;
+    --border-warm-grey: #DCD7CC;
+    --dark-midnight: #080B12;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: 'Playfair Display', Georgia, Cambria, 'Times New Roman', serif;
+  }
+}
+
+/* Editorial Dropcap utility for article lead paragraphs */
+.editorial-dropcap:first-letter {
+  float: left;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 4.2rem;
+  line-height: 0.85;
+  padding-top: 4px;
+  padding-right: 12px;
+  padding-bottom: 2px;
+  color: #244936;
+  font-weight: 700;
+}
+
+/* Subtle archival paper texture or grid accents */
+.bg-heritage-ivory {
+  background-color: #F5F1E8;
+}
+
+.border-warm-grey {
+  border-color: #DCD7CC;
+}
+
+.text-ink-black {
+  color: #191B19;
+}
+
+.text-slate-grey {
+  color: #686B66;
+}
+
+.bg-forest-green {
+  background-color: #244936;
+}
+
+.text-muted-gold {
+  color: #B89558;
+}
+
+.bg-deep-midnight {
+  background-color: #080B12;
+}
+
+/* Focus styles for keyboard accessibility */
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
+  outline: 2px solid #244936;
+  outline-offset: 2px;
+}

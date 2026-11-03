@@ -1,0 +1,1909 @@
+# PROJECT: TALES FROM THE GAME
+## Complete Website Build, Content Strategy, SEO, AEO and Growth Marketing Implementation
+
+You are a senior full-stack developer, UI/UX designer, technical SEO specialist, cricket researcher, editorial strategist and growth marketer.
+
+Your task is to build a complete, responsive, production-oriented website for **Tales from the Game**, an independent cricket storytelling publication.
+
+Do not create a static mockup, a generic sports blog, a website template with placeholder content, or a supplement brand website.
+
+Build a real, functional website with working navigation, reusable components, complete launch articles, page-specific metadata, technical SEO, responsive layouts and the infrastructure required to measure growth marketing experiments.
+
+Where external services require API keys, credentials, a real domain or account access, implement the appropriate integration points and explain exactly how to configure them. Never pretend that an integration is active when it has not been connected and verified.
+
+Prioritise the requirements in this prompt. Do not omit major requirements simply to make the initial implementation easier.
+
+---
+
+# 1. BRAND AND WEBSITE POSITIONING
+
+## Brand name
+
+Tales from the Game
+
+## Tagline
+
+Some Legends Are Never Forgotten. Others Never Got Their Due.
+
+## Brand concept
+
+Tales from the Game explores cricket beyond the scorecard.
+
+The publication tells the stories behind iconic moments, legendary players, overlooked careers, forgotten franchises, rivalries, comebacks, extraordinary performances and the decisions that shaped cricket history.
+
+It combines the nostalgia of an old cricket magazine with the usability and visual quality of a modern digital publication.
+
+The website should make readers feel that they are discovering the human stories, tactical decisions and historical context behind the game.
+
+## Editorial positioning
+
+The website will cover two connected content categories:
+
+**1. Iconic stories**
+
+Well-known players and moments examined from a fresh angle.
+
+Examples:
+- MS Dhoni's 2011 World Cup final
+- Virat Kohli's competitive mindset
+- AB de Villiers' batting technique
+- Dale Steyn's fast bowling
+- Adam Gilchrist's influence as an attacking wicketkeeper-batter
+- Ravichandran Ashwin's evolving cricketing intelligence
+
+**2. Forgotten, overlooked and unfinished stories**
+
+Players, teams and careers that deserve another look.
+
+Examples:
+- The story of Deccan Chargers
+- RP Singh's bowling and career
+- The unrealised potential associated with Fidel Edwards and Jerome Taylor
+- Players whose careers were interrupted or whose reputations never fully reflected their ability
+- Mohammad Amir's rise, career interruption, return and legacy
+
+The second category should become a distinctive editorial feature of the publication.
+
+However, do not automatically label a player forgotten or underrated. Explain why a story deserves attention, and support claims with evidence.
+
+## Target audience hypotheses
+
+Build the publication for readers who may include:
+
+- Indian cricket fans
+- International cricket fans
+- Readers interested in cricket history
+- Fans of iconic matches and memorable finishes
+- Readers interested in player biographies and career analysis
+- Fans who enjoy nostalgia and cricket from earlier eras
+- Younger fans who want context behind famous players and matches
+- Readers curious about overlooked careers, tactical decisions and what-if scenarios
+
+These are initial audience hypotheses, not validated research findings.
+
+Do not present these assumptions as confirmed consumer insights.
+
+---
+
+# 2. VISUAL IDENTITY AND DESIGN SYSTEM
+
+Use the visual direction called **The Heritage Archive**.
+
+The design should resemble a premium, vintage cricket magazine updated for modern digital reading.
+
+It should feel editorial, thoughtful, nostalgic, sophisticated and distinctive.
+
+Avoid making it look like:
+- A generic sports news portal
+- A fantasy cricket website
+- A betting website
+- An esports website
+- A standard WordPress blog
+- A technology startup landing page
+
+## Colour palette
+
+Use these colours consistently.
+
+| Purpose | Colour | Hex |
+|---|---|---|
+| Main background | Warm ivory | #F5F1E8 |
+| Primary text | Ink black | #191B19 |
+| Signature accent | Forest green | #244936 |
+| Highlight accent | Muted gold | #B89558 |
+| Cards and light surfaces | White | #FFFFFF |
+| Secondary text | Slate grey | #686B66 |
+| Borders and dividers | Warm grey | #DCD7CC |
+| Dark cinematic sections | Deep midnight | #080B12 |
+
+## Colour usage
+
+- Warm ivory should dominate the reading experience.
+- Ink black should be used for primary text and strong contrast.
+- Forest green should be used for buttons, selected states, category labels and key brand elements.
+- Muted gold should be used sparingly for small highlights, dates, decorative lines and selected labels.
+- White should distinguish cards and content surfaces from the ivory background.
+- Slate grey should be used for secondary information.
+- Warm grey should define subtle borders and dividers.
+- Deep midnight should be reserved for selected cinematic hero or feature sections.
+
+Do not use every accent colour at full strength in every section.
+
+## Typography
+
+Use an editorial typography system.
+
+Preferred direction:
+- Display headings: a refined serif font such as Playfair Display or an equivalent available Google Font.
+- Body text: a highly readable sans-serif such as Inter or a similar font.
+- Small labels and metadata: a clean sans-serif with careful spacing.
+
+Use serif typography for major storytelling headlines and sans-serif typography for body copy, navigation, buttons, categories and utility information.
+
+Create a clear type hierarchy for:
+- Hero headline
+- Page title
+- Article headline
+- Section headings
+- Body text
+- Captions
+- Author and date information
+- Category labels
+- Navigation and buttons
+
+Body text must remain comfortable to read on mobile.
+
+Avoid excessive uppercase text, excessive letter spacing and overly small captions.
+
+## Layout and visual composition
+
+Use:
+- Generous whitespace
+- Editorial grids
+- Strong typographic hierarchy
+- Large featured photographs
+- Asymmetric feature layouts where appropriate
+- Thin, subtle dividers
+- Restrained decorative elements
+- Consistent spacing
+- Well-designed article cards
+- A strong reading experience on long articles
+
+The website should look carefully art-directed rather than generated from a repetitive template.
+
+## Photography and imagery
+
+Use relevant cricket imagery.
+
+Prioritise:
+- Archival-style cricket photography
+- Players in action
+- Stadium atmosphere
+- Historic match moments
+- Cricket equipment and grounds
+- Team imagery
+- Editorial crops that work at multiple screen sizes
+
+Avoid:
+- Random cricket stock photos unrelated to the article
+- Unrelated leaves, rocks or nature imagery
+- Fake player portraits
+- Artificially generated historical photographs presented as genuine archival images
+- Images that misrepresent the player, match, team or era
+- Broken image URLs
+- Copyright-infringing image use
+
+Use only images that are legitimately available for the intended use.
+
+When an appropriate image cannot be obtained, use a visually coherent placeholder and clearly identify it in the project documentation. Do not misrepresent a placeholder as a real historical photograph.
+
+Use responsive image sizing, lazy loading for below-the-fold images and descriptive alt text.
+
+The main hero image should load efficiently and should not be lazy-loaded if doing so would delay the page's main visual content.
+
+## Responsive design
+
+The website must work properly on:
+- Desktop
+- Laptop
+- Tablet
+- Mobile phones
+
+Implement:
+- Responsive navigation
+- A working mobile menu
+- Responsive image crops
+- Readable article text
+- Appropriate touch targets
+- Responsive cards and grids
+- Mobile-friendly buttons and forms
+- No horizontal overflow
+- No clipped headlines
+- No overlapping text
+- No content that requires hover to access on mobile
+
+Buttons, links, menus, cards and forms must remain usable at different screen sizes.
+
+Do not use fixed-width layouts that break on smaller screens.
+
+---
+
+# 3. WEBSITE ARCHITECTURE
+
+Build the following routes.
+
+1. `/`
+2. `/stories/`
+3. `/forgotten-legends/`
+4. `/iconic-moments/`
+5. `/teams-and-eras/`
+6. `/about/`
+7. `/contact/`
+8. `/editorial-standards/`
+9. `/privacy-policy/`
+10. `/stories/matthew-hayden-batting-style/`
+11. `/stories/rp-singh-bowling-style/`
+12. `/stories/mohammad-amir-career/`
+13. `/stories/deccan-chargers-ipl-history/`
+14. `/stories/ms-dhoni-2011-world-cup-final/`
+
+All routes must work directly when entered into the browser.
+
+Do not make the website depend on navigating from the homepage first.
+
+Use appropriate routing, page templates and reusable components.
+
+Use server-side rendering or static generation where supported by the selected stack and deployment environment. The important content and metadata must be accessible to search engines without depending entirely on client-side JavaScript execution.
+
+If the selected framework has limitations, choose the most reliable implementation available and document the trade-offs.
+
+---
+
+# 4. HOMEPAGE DESIGN
+
+Create a premium editorial homepage.
+
+## A. Header
+
+Include:
+- Tales from the Game wordmark
+- Home
+- Stories
+- Forgotten Legends
+- Iconic Moments
+- Teams & Eras
+- About
+
+Add a prominent but restrained visual treatment for the brand name.
+
+The header should remain easy to use on mobile.
+
+A sticky header may be used if it improves navigation without taking up excessive screen space.
+
+All navigation items must link to working routes.
+
+## B. Hero section
+
+The hero should immediately communicate the publication's identity.
+
+Use the tagline:
+
+"Some Legends Are Never Forgotten. Others Never Got Their Due."
+
+Supporting text:
+
+"Cricket beyond the scorecard. The players, moments, decisions and unfinished stories that shaped the game."
+
+Include a prominent editorial cricket photograph and a clear call to action.
+
+Primary button:
+Explore the Stories
+
+Secondary button:
+Discover Forgotten Legends
+
+The hero should have strong visual hierarchy and should not be overloaded with text.
+
+Use the deep midnight background selectively if it creates a compelling contrast with the ivory editorial sections.
+
+## C. Featured story
+
+Feature the Mohammad Amir article as the initial lead story.
+
+Display:
+- Featured image
+- Category label
+- Headline
+- Short editorial introduction
+- Read Story button
+
+The design should communicate that the story examines talent, interruption, return and legacy.
+
+Do not use sensational or misleading language.
+
+## D. Latest stories
+
+Display the five launch articles in a carefully designed editorial grid.
+
+Each card should include:
+- Relevant image
+- Category
+- Headline
+- Short summary
+- Reading-time estimate
+- Working link to the full article
+
+Use the actual reading time calculated from article word count.
+
+Do not hard-code an inaccurate reading time.
+
+## E. Forgotten Legends
+
+Create a visually distinctive section introducing the publication's forgotten and overlooked stories.
+
+Use forest green or another suitable dark treatment to create contrast with the main ivory layout.
+
+Include a short introduction explaining the editorial concept.
+
+Provide a link to the Forgotten Legends page.
+
+## F. Iconic Moments
+
+Create a section featuring memorable cricketing moments.
+
+Examples of future stories:
+- MS Dhoni's 2011 World Cup final
+- VVS Laxman's 281 against Australia
+- Anil Kumble's ten wickets in an innings
+- Yuvraj Singh's six sixes
+- Historic World Cup finishes
+
+Only feature complete, published stories as if they are available to read.
+
+Clearly distinguish planned stories from published content.
+
+## G. Teams and Eras
+
+Introduce stories about historic teams, IPL franchises, dominant sides and cricketing eras.
+
+Feature Deccan Chargers as the first published team story.
+
+## H. Newsletter section
+
+Create an attractive newsletter subscription section.
+
+Suggested headline:
+
+"Every Great Game Has Another Story."
+
+Supporting text:
+
+"Get thoughtful cricket stories, forgotten careers and iconic moments delivered to your inbox."
+
+Include:
+- Email field
+- Subscribe button
+- Appropriate validation
+- Consent wording where required
+- Loading, success and error states
+
+Do not pretend the subscription works without a backend or connected email service.
+
+If the integration has not been configured, build the frontend and clearly document how to connect a real provider.
+
+Do not store email addresses in an insecure public database.
+
+## I. Footer
+
+Include:
+- Brand name
+- Tagline
+- Stories
+- Forgotten Legends
+- Iconic Moments
+- Teams & Eras
+- About
+- Contact
+- Editorial Standards
+- Privacy Policy
+- Copyright notice
+
+Use the current year dynamically.
+
+Do not invent a company address, registered business entity or other details that have not been supplied.
+
+---
+
+# 5. STORIES INDEX
+
+Create a complete Stories page.
+
+Include:
+- Clear page heading
+- Short introduction
+- All five published articles
+- Category labels
+- Search or filtering functionality if practical
+- Responsive card layout
+- Links to the relevant category pages
+
+A search field, if implemented, must actually filter or search available articles.
+
+Do not include decorative controls that do nothing.
+
+Use descriptive article titles and crawlable links.
+
+The page must remain useful without JavaScript where practical, and all published stories must be discoverable through ordinary HTML links.
+
+---
+
+# 6. FORGOTTEN LEGENDS PAGE
+
+Create a dedicated editorial landing page for forgotten, overlooked and unfinished cricket stories.
+
+The design should feel different from a standard category archive.
+
+Include:
+- Editorial introduction
+- Published stories that genuinely fit the category
+- Short explanations of why each story deserves attention
+- Links to full articles
+- A future-story area only if unpublished ideas are clearly labelled as forthcoming and are not presented as completed articles
+
+Do not create empty keyword-targeting pages.
+
+The page should provide genuine editorial value.
+
+---
+
+# 7. ICONIC MOMENTS PAGE
+
+Create a dedicated landing page for memorable cricketing performances and historic moments.
+
+Organise stories into meaningful categories if practical:
+- World Cup moments
+- Historic Test matches
+- Famous finishes
+- Individual performances
+- Turning points
+
+Include only stories that have actually been published.
+
+Use descriptive headings, links and short summaries.
+
+Do not fabricate match results, dates or statistics.
+
+---
+
+# 8. TEAMS AND ERAS PAGE
+
+Create an editorial landing page covering cricket teams, franchises and eras.
+
+The Deccan Chargers article should be the first published feature.
+
+Future story ideas may include:
+- Dominant Australian teams
+- Historic Indian teams
+- Memorable West Indies sides
+- Former IPL franchises
+- Teams that changed cricket
+- Rivalries that defined an era
+
+Clearly distinguish published articles from planned topics.
+
+---
+
+# 9. FIVE COMPLETE LAUNCH ARTICLES
+
+Create five complete, high-quality articles.
+
+These must not be short summaries or placeholder text.
+
+Write substantial, well-structured stories with a strong narrative, credible factual foundations, useful context and a distinct editorial perspective.
+
+Target approximately 900 to 1,300 words per article where the subject supports that length. Do not add filler to reach a word count.
+
+Each article should contain:
+- One H1
+- A compelling introduction
+- Meaningful H2 sections
+- Relevant H3 sections when needed
+- Accurate dates, scores and statistics
+- Relevant context and analysis
+- Internal links to related published stories
+- A conclusion
+- A relevant call to explore another story
+- Accurate reading-time information
+- A featured image or clearly identified image placeholder
+- Page-specific SEO metadata
+- Article structured data where appropriate
+
+The content should feel written by a knowledgeable cricket storyteller, not a generic AI biography generator.
+
+Avoid repetitive introductions, identical article structures and empty inspirational conclusions.
+
+Do not copy existing articles.
+
+Use original wording and cite credible sources for important factual claims.
+
+## ARTICLE 1: MATTHEW HAYDEN
+
+Working title:
+
+"The Left-Handed Beast Who Changed the Tempo of Test Batting"
+
+Primary keyword:
+
+Matthew Hayden batting style
+
+Secondary keywords:
+- Matthew Hayden career
+- Matthew Hayden aggressive batting
+- Matthew Hayden Test cricket
+- Matthew Hayden Australian opener
+
+URL:
+
+`/stories/matthew-hayden-batting-style/`
+
+SEO title:
+
+`Matthew Hayden Batting Style & Career | Tales from the Game`
+
+Meta description:
+
+`Explore Matthew Hayden's aggressive batting style, Test cricket dominance and the qualities that made him one of Australia's most formidable openers.`
+
+H1:
+
+"Matthew Hayden: The Left-Handed Beast Who Changed the Tempo of Test Batting"
+
+Story direction:
+
+Explain how Hayden's approach to batting helped define his reputation as an aggressive opening batter.
+
+Explore:
+- His physical presence and approach at the crease
+- His use of power and intent
+- His approach to fast bowling and spin
+- His role in Australia's Test cricket dominance
+- Memorable innings and career milestones
+- The relationship between his style and the conditions in which he played
+- His place in cricket history
+
+Do not merely list career statistics.
+
+Explain why his batting approach mattered and support the analysis with specific examples.
+
+Verify major achievements, match details and statistics through credible cricket sources.
+
+## ARTICLE 2: RP SINGH
+
+Working title:
+
+"The Left-Arm Swing Bowler with a Distinctive Rhythm"
+
+Primary keyword:
+
+RP Singh cricketer
+
+Secondary keywords:
+- RP Singh bowling style
+- RP Singh career
+- RP Singh Indian fast bowler
+- RP Singh left-arm fast-medium bowler
+
+URL:
+
+`/stories/rp-singh-bowling-style/`
+
+SEO title:
+
+`RP Singh: Bowling Style & Career | Tales from the Game`
+
+Meta description:
+
+`Explore RP Singh's left-arm swing bowling, his rise in Indian cricket and the career moments that shaped his journey as a fast bowler.`
+
+H1:
+
+"RP Singh: The Left-Arm Swing Bowler with a Distinctive Rhythm"
+
+Story direction:
+
+Tell the story of RP Singh's bowling career and the qualities that made him distinctive.
+
+Explore:
+- His emergence in Indian cricket
+- His left-arm fast-medium bowling
+- Swing and movement
+- His contributions in international cricket
+- Important career moments
+- His role in major Indian cricket campaigns
+- The opportunities and challenges that shaped his career
+- His legacy as a fast bowler
+
+Explain bowling concepts in simple language.
+
+Do not invent technical details about his action or make unsupported claims that he was unfairly overlooked.
+
+## ARTICLE 3: MOHAMMAD AMIR
+
+Working title:
+
+"The Talent, the Fall, and the What-If"
+
+Primary keyword:
+
+Mohammad Amir career
+
+Secondary keywords:
+- Mohammad Amir Champions Trophy 2017
+- Mohammad Amir comeback
+- Mohammad Amir cricket story
+- Mohammad Amir bowling career
+
+URL:
+
+`/stories/mohammad-amir-career/`
+
+SEO title:
+
+`Mohammad Amir Career: Talent and Comeback | Tales from the Game`
+
+Meta description:
+
+`Explore Mohammad Amir's cricketing rise, career interruption, return to international cricket and defining performance in the 2017 Champions Trophy final.`
+
+H1:
+
+"Mohammad Amir: The Talent, the Fall, and the What-If"
+
+Story direction:
+
+Tell a nuanced story about a highly talented fast bowler whose career was affected by major events.
+
+Explore:
+- His emergence as a young fast-bowling talent
+- His early international performances
+- The spot-fixing scandal and its consequences
+- His absence from international cricket
+- His return
+- His performance in the 2017 Champions Trophy final
+- The later stages of his career
+- His cricketing legacy and the questions surrounding his potential
+
+Do not sensationalise the subject.
+
+Distinguish documented events from opinion and speculation.
+
+Do not describe him as the greatest talent Pakistan ever produced as though that were an established fact.
+
+Explain the difference between a player's demonstrated achievements and the hypothetical career people imagine he might have had.
+
+## ARTICLE 4: DECCAN CHARGERS
+
+Working title:
+
+"The IPL Champions Whose Story Deserves Another Look"
+
+Primary keyword:
+
+Deccan Chargers IPL history
+
+Secondary keywords:
+- Deccan Chargers 2009 champions
+- Deccan Chargers IPL team
+- Deccan Chargers IPL journey
+- Deccan Chargers history
+
+URL:
+
+`/stories/deccan-chargers-ipl-history/`
+
+SEO title:
+
+`Deccan Chargers IPL History: 2009 Champions | Tales from the Game`
+
+Meta description:
+
+`Revisit Deccan Chargers' IPL journey, their transformation into 2009 champions and the story of a franchise that no longer competes in the league.`
+
+H1:
+
+"Deccan Chargers: The IPL Champions Whose Story Deserves Another Look"
+
+Story direction:
+
+Explain the rise, transformation, championship and eventual end of the Deccan Chargers franchise.
+
+Explore:
+- The team's initial IPL campaign
+- Its early challenges
+- The changes that preceded its championship season
+- The 2009 IPL title
+- The important players and contributions
+- The team's defining performances
+- The franchise's departure from the IPL
+- Its place in the league's history
+
+Build the story around the contrast between its difficult beginning and championship success.
+
+Verify the timeline, results, player performances and circumstances surrounding the franchise's departure.
+
+Do not imply that Deccan Chargers still participates in the IPL.
+
+## ARTICLE 5: MS DHONI
+
+Working title:
+
+"The Decisions Behind the 2011 World Cup Finish"
+
+Primary keyword:
+
+MS Dhoni 2011 World Cup final
+
+Secondary keywords:
+- MS Dhoni 91 not out
+- India 2011 World Cup final
+- Dhoni winning six 2011 final
+- MS Dhoni finishing ability
+- India vs Sri Lanka 2011 World Cup final
+
+URL:
+
+`/stories/ms-dhoni-2011-world-cup-final/`
+
+SEO title:
+
+`MS Dhoni's 2011 World Cup Final: The Story Behind 91* | Tales from the Game`
+
+Meta description:
+
+`Relive MS Dhoni's unbeaten 91 in the 2011 World Cup final and explore the batting-order decision, the pressure of the chase and India's famous victory.`
+
+H1:
+
+"MS Dhoni: The Decisions Behind the 2011 World Cup Finish"
+
+Story direction:
+
+Tell the story of the 2011 World Cup final through decisions, pressure and execution.
+
+Explore:
+- The match context
+- India's position during the chase
+- The pressure following early wickets
+- Dhoni's promotion in the batting order
+- His partnership with Gautam Gambhir
+- The choices that shaped the innings
+- The final overs
+- The winning six
+- The wider significance of the victory
+
+Go beyond a match recap.
+
+Explain the decisions and circumstances that made the finish memorable.
+
+Verify the score, balls faced, result, partnerships and key events against credible cricket records.
+
+---
+
+# 10. FUTURE CONTENT BACKLOG
+
+Create an editorial content backlog in the project documentation.
+
+These ideas are not launch articles and must not be presented as published content.
+
+## Player stories
+
+- Dale Steyn: What Made Him Such a Complete Fast Bowler?
+- Virat Kohli: The Mindset Behind the Intensity
+- Ravichandran Ashwin: The Evolving Mind of a Cricketing Strategist
+- Adam Gilchrist: The Australian Cricketer Admired Across Rivalries
+- AB de Villiers: Technique, Improvisation and the Limits of Conventional Batting
+- Fidel Edwards and Jerome Taylor: Talent, Pace and the What-If
+- Additional stories about Mohammad Amir's 2017 Champions Trophy final performance
+
+## Iconic performances and moments
+
+- VVS Laxman's 281 Against Australia
+- Rahul Dravid's 180 in the Kolkata Test
+- Kapil Dev's 175* at the 1983 World Cup
+- Brian Lara's 400 Not Out
+- Anil Kumble's Ten Wickets in an Innings
+- Yuvraj Singh's Six Sixes
+- MS Dhoni's 183* Against Sri Lanka
+- MS Dhoni's 2011 World Cup Final
+- Lasith Malinga's Four Wickets in Four Balls
+- Mitchell Johnson's 2013-14 Ashes Campaign
+- Shane Warne's Ball of the Century
+- Stuart Broad's 8 for 15 at Trent Bridge
+- Bob Willis's 8 for 43 at Headingley
+- Australia's historic Test dominance
+- Memorable World Cup finals
+
+## Future editorial principles
+
+Before publishing any future story:
+- Research the topic.
+- Check whether the proposed keyword matches genuine search intent.
+- Identify the reader's central question.
+- Verify important facts.
+- Choose a distinctive editorial angle.
+- Prepare unique metadata.
+- Link to relevant existing stories.
+- Avoid producing multiple articles that compete for exactly the same search intent without a clear reason.
+
+---
+
+# 11. KEYWORD RESEARCH AND SEARCH INTENT
+
+Implement the keyword plan provided in this prompt.
+
+Do not invent search volumes, CPC, keyword difficulty, monthly traffic estimates or ranking forecasts.
+
+The listed targets are preliminary, research-informed hypotheses.
+
+For each article, create a keyword research record containing:
+- Primary keyword
+- Secondary keywords
+- Search intent
+- Related questions
+- Proposed URL
+- SEO title
+- Meta description
+- H1
+- Suggested H2 sections
+- Internal-link opportunities
+- Source requirements
+- Research date
+- Validation status
+
+Use the primary keyword as a guide to the article's central topic.
+
+Use secondary keywords to identify relevant subtopics and questions.
+
+Do not force every keyword into the article.
+
+## Keyword placement
+
+Implement these principles:
+
+**SEO title:** Include the primary keyword or a natural close variation.
+
+**H1:** Write one clear, descriptive main headline.
+
+**Introduction:** Introduce the subject and use the primary keyword or a natural variation early when it fits.
+
+**H2 headings:** Use relevant secondary terms where they accurately describe the section.
+
+**Body:** Answer the reader's questions with useful detail, examples, historical context and credible facts.
+
+**Images:** Use accurate alt text that describes the actual image.
+
+**Internal links:** Use descriptive anchor text that tells readers what the linked story covers.
+
+**URL:** Use short, descriptive, lowercase slugs with hyphens.
+
+**Conclusion:** Summarise the story's main point and direct readers to genuinely related articles.
+
+**FAQs:** Include them only where they answer meaningful reader questions.
+
+Do not use a target keyword-density percentage.
+
+Do not repeat a phrase unnaturally.
+
+Do not create thin content purely to target a keyword.
+
+Do not add a `meta keywords` tag.
+
+Do not claim that a keyword is low-competition or high-volume without actual supporting data.
+
+---
+
+# 12. COMPLETE PAGE-BY-PAGE SEO METADATA
+
+Implement the following metadata for every page.
+
+These titles and descriptions are the initial production copy. They should be checked for accuracy and uniqueness during implementation.
+
+## Homepage
+
+URL:
+`/`
+
+Primary keyword theme:
+Cricket stories and cricket legends
+
+Secondary keyword themes:
+- Iconic cricket moments
+- Forgotten cricket legends
+- Cricket history
+- Legendary cricketers
+
+SEO title:
+
+`Cricket Stories, Legends & Forgotten Heroes | Tales from the Game`
+
+Meta description:
+
+`Discover the stories behind cricket's iconic moments, legendary players and forgotten heroes. Explore the careers, decisions and what-ifs that shaped the game.`
+
+H1:
+
+"Some Legends Are Never Forgotten. Others Never Got Their Due."
+
+Supporting copy:
+
+"Cricket stories beyond the scorecard. Discover iconic moments, overlooked careers, forgotten teams and the decisions that changed the game."
+
+## Stories index
+
+URL:
+`/stories/`
+
+Primary keyword theme:
+Cricket stories
+
+Secondary keyword themes:
+- Cricket player stories
+- Cricket history stories
+- Iconic cricket stories
+
+SEO title:
+
+`Cricket Stories and Player Histories | Tales from the Game`
+
+Meta description:
+
+`Explore cricket stories about legendary players, iconic matches, forgotten careers and the moments that made the game unforgettable.`
+
+H1:
+
+"Stories from the Game"
+
+## Forgotten Legends
+
+URL:
+`/forgotten-legends/`
+
+Primary keyword theme:
+Forgotten cricket legends
+
+Secondary keyword themes:
+- Forgotten cricketers
+- Overlooked cricket players
+- Forgotten Indian cricketers
+
+SEO title:
+
+`Forgotten Cricket Legends and Overlooked Players | Tales from the Game`
+
+Meta description:
+
+`Meet the forgotten cricket legends, overlooked players and unfinished careers whose stories deserve another look.`
+
+H1:
+
+"The Legends Who Deserve Another Look"
+
+## Iconic Moments
+
+URL:
+`/iconic-moments/`
+
+Primary keyword theme:
+Iconic cricket moments
+
+Secondary keyword themes:
+- Historic cricket matches
+- Famous cricket moments
+- Memorable cricket finishes
+
+SEO title:
+
+`Iconic Cricket Moments and Historic Matches | Tales from the Game`
+
+Meta description:
+
+`Revisit iconic cricket moments, historic matches and unforgettable finishes through the decisions, performances and stories behind them.`
+
+H1:
+
+"Moments That Changed the Game"
+
+## Teams and Eras
+
+URL:
+`/teams-and-eras/`
+
+Primary keyword theme:
+Cricket team history
+
+Secondary keyword themes:
+- Historic cricket teams
+- IPL team history
+- Cricket eras
+
+SEO title:
+
+`Cricket Teams, Eras and Forgotten Franchises | Tales from the Game`
+
+Meta description:
+
+`Explore cricket teams, defining eras and forgotten franchises through the players, decisions and turning points that shaped their stories.`
+
+H1:
+
+"Teams, Eras and the Stories Between Them"
+
+## About
+
+URL:
+`/about/`
+
+SEO title:
+
+`About Tales from the Game | Cricket Storytelling`
+
+Meta description:
+
+`Learn about Tales from the Game, an independent cricket storytelling publication exploring iconic moments, overlooked careers and cricket history.`
+
+H1:
+
+"Why We Tell These Stories"
+
+## Contact
+
+URL:
+`/contact/`
+
+SEO title:
+
+`Contact Tales from the Game | Share a Cricket Story`
+
+Meta description:
+
+`Contact Tales from the Game with feedback, corrections, story suggestions and ideas about the players and moments cricket should remember.`
+
+H1:
+
+"Get in Touch"
+
+## Editorial Standards
+
+URL:
+`/editorial-standards/`
+
+SEO title:
+
+`Editorial Standards and Corrections | Tales from the Game`
+
+Meta description:
+
+`Read the editorial principles Tales from the Game follows for cricket research, factual accuracy, sourcing, corrections and responsible storytelling.`
+
+H1:
+
+"Our Editorial Standards"
+
+## Privacy Policy
+
+URL:
+`/privacy-policy/`
+
+SEO title:
+
+`Privacy Policy | Tales from the Game`
+
+Meta description:
+
+`Read the Tales from the Game privacy policy to understand what information the website collects, how it is used and how visitors can contact us.`
+
+H1:
+
+"Privacy Policy"
+
+The privacy policy must reflect the features actually implemented, including analytics, cookies, advertising pixels, contact forms and newsletter functionality.
+
+Do not claim that the website has no tracking if analytics or advertising pixels have been enabled.
+
+Do not invent legal details or make unsupported claims about compliance.
+
+---
+
+# 13. TECHNICAL METADATA IMPLEMENTATION
+
+Metadata must be implemented in the HTML document head.
+
+Do not display meta tags as visible text on the page.
+
+Use the framework's recommended metadata system where possible.
+
+For every indexable page, implement:
+- Unique HTML title
+- Unique meta description
+- Canonical URL
+- Open Graph title
+- Open Graph description
+- Open Graph image
+- Open Graph URL
+- Appropriate Open Graph type
+- Twitter/X card metadata where useful
+- Appropriate robots directives
+
+Example:
+
+```html
+<title>Matthew Hayden Batting Style &amp; Career | Tales from the Game</title>
+
+<meta
+  name="description"
+  content="Explore Matthew Hayden's aggressive batting style, Test cricket dominance and the qualities that made him one of Australia's most formidable openers."
+/>
+
+<link
+  rel="canonical"
+  href="https://YOUR-REAL-DOMAIN/stories/matthew-hayden-batting-style/"
+/>
+
+<meta property="og:type" content="article" />
+
+<meta
+  property="og:title"
+  content="Matthew Hayden Batting Style &amp; Career | Tales from the Game"
+/>
+
+<meta
+  property="og:description"
+  content="Explore Matthew Hayden's aggressive batting style, Test cricket dominance and the qualities that made him one of Australia's most formidable openers."
+/>
+
+<meta
+  property="og:url"
+  content="https://YOUR-REAL-DOMAIN/stories/matthew-hayden-batting-style/"
+/>
+
+<meta
+  property="og:image"
+  content="https://YOUR-REAL-DOMAIN/images/matthew-hayden-featured.jpg"
+/>
+
+<meta name="twitter:card" content="summary_large_image" />
+```
+
+This is an implementation example. Do not publish `YOUR-REAL-DOMAIN` or the sample image URL.
+
+Use the actual deployed domain and real, publicly accessible image URLs.
+
+Ensure every article's metadata is generated from that article's own data.
+
+Do not reuse one title and description across every article.
+
+Do not create contradictory canonical tags or indexing directives.
+
+Do not apply `noindex` to pages intended to appear in Google Search.
+
+Ensure metadata is accessible to search crawlers through the rendered page.
+
+Google may choose a different title or snippet for a search result. Do not promise that the exact supplied title or description will always be displayed.
+
+---
+
+# 14. ARTICLE CONTENT DATA STRUCTURE
+
+Use a maintainable content model.
+
+Each article should contain fields equivalent to:
+
+- `title`
+- `slug`
+- `excerpt`
+- `primaryKeyword`
+- `secondaryKeywords`
+- `seoTitle`
+- `metaDescription`
+- `h1`
+- `category`
+- `featuredImage`
+- `featuredImageAlt`
+- `author`
+- `datePublished`
+- `dateModified`
+- `content`
+- `relatedArticles`
+- `published`
+- `readingTime`
+
+Use an appropriate structure for the selected framework.
+
+The exact field names can be adapted to the architecture, but the information must be represented clearly.
+
+Use a shared article template that renders:
+- Article headline
+- Category
+- Publication information
+- Featured image
+- Article body
+- Related stories
+- Breadcrumbs where implemented
+- SEO metadata
+- Structured data
+
+Calculate reading time from actual word count.
+
+Use real publication dates.
+
+Do not invent an author name, credentials or biography. If no author information is provided, use a truthful editorial attribution and document how it can be updated.
+
+Unpublished drafts must not be included in the production sitemap or publicly indexed.
+
+---
+
+# 15. INTERNAL LINKING STRATEGY
+
+Implement a useful internal-linking system.
+
+## Homepage
+
+Link to:
+- All five launch articles
+- Stories
+- Forgotten Legends
+- Iconic Moments
+- Teams and Eras
+- About
+
+## Stories index
+
+Link to all five published articles.
+
+## Article pages
+
+Where contextually relevant:
+- Link the Matthew Hayden article to a future Adam Gilchrist article.
+- Link the RP Singh article to the Deccan Chargers story only where a real, relevant connection can be established.
+- Link the Mohammad Amir article to the MS Dhoni article where the 2017 Champions Trophy or relevant historical context makes the connection useful.
+- Link the MS Dhoni article to other World Cup stories as they are published.
+- Link each article back to its relevant category.
+
+Do not create misleading connections just to add internal links.
+
+Only link to published pages unless an upcoming story is clearly marked as forthcoming.
+
+Use descriptive anchor text rather than repeatedly using "click here."
+
+All internal links must work.
+
+---
+
+# 16. STRUCTURED DATA
+
+Implement valid JSON-LD structured data where appropriate.
+
+## Article pages
+
+Use `Article` or `BlogPosting` structured data.
+
+Include relevant fields such as:
+- Headline
+- Image
+- Author
+- Date published
+- Date modified
+- Publisher
+- Main entity or canonical page URL
+
+Only use accurate information.
+
+## Website identity
+
+Implement suitable `Organization` and `WebSite` structured data if the necessary real information is available.
+
+## Breadcrumbs
+
+Use `BreadcrumbList` structured data if breadcrumb navigation is implemented.
+
+The structured data must agree with the visible page.
+
+Do not invent ratings, reviews, author qualifications or dates.
+
+Validate the structured data after deployment.
+
+Structured data does not guarantee rich search results.
+
+---
+
+# 17. TECHNICAL SEO: SITEMAP AND ROBOTS.TXT
+
+Create a valid XML sitemap at:
+
+`/sitemap.xml`
+
+Include:
+- Homepage
+- Stories index
+- Published category pages
+- About
+- Contact
+- Editorial Standards
+- Privacy Policy
+- All five published articles
+
+Exclude:
+- Unpublished drafts
+- Preview pages
+- Duplicate URLs
+- Redirecting URLs
+- Non-canonical URLs
+- URLs marked noindex
+
+Use absolute URLs based on the real production domain.
+
+Create a `robots.txt` file at:
+
+`/robots.txt`
+
+Allow search engines to crawl the public website and reference the XML sitemap using its absolute production URL.
+
+Do not block the entire website.
+
+Do not use robots.txt as a substitute for noindex directives.
+
+Verify that both files are accessible after deployment.
+
+Create a deployment checklist explaining how to:
+1. Deploy the website.
+2. Confirm the real domain.
+3. Check robots.txt.
+4. Check sitemap.xml.
+5. Verify canonical URLs.
+6. Register the site in Google Search Console.
+7. Submit the sitemap.
+8. Inspect important URLs.
+9. Monitor indexing and search queries.
+
+Do not claim that a page has been indexed simply because it appears in the sitemap.
+
+---
+
+# 18. ANSWER ENGINE OPTIMISATION
+
+Write articles so readers and answer-oriented search systems can understand the content clearly.
+
+For each article:
+- State what the story concerns near the beginning.
+- Answer the central question directly.
+- Use descriptive H2 headings.
+- Explain cricket terminology where needed.
+- Include dates, scores and context when useful.
+- Use timelines or statistics tables only when they improve understanding.
+- Include relevant FAQs when they answer genuine questions.
+- Cite credible sources for important claims.
+- Distinguish established facts from interpretation.
+- Avoid filler and repeated conclusions.
+
+Do not write unnatural keyword-heavy passages.
+
+Do not promise visibility in AI-generated search results or featured snippets.
+
+The objective is useful, structured, factual and easy-to-understand content.
+
+---
+
+# 19. FACT-CHECKING AND EDITORIAL STANDARDS
+
+Cricket history is central to the brand's credibility.
+
+Use credible sources, prioritising:
+- Official cricket boards
+- ICC
+- BCCI
+- Official tournament records
+- Reputable cricket statistics databases
+- Established cricket publications
+- Direct interviews or primary records where available
+
+For every article, maintain a list of sources used to verify:
+- Match results
+- Scores and statistics
+- Dates
+- Player achievements
+- Team history
+- Career interruptions
+- Controversies
+- Tournament results
+- Major career milestones
+
+Do not fabricate citations or source URLs.
+
+Do not invent quotations.
+
+Do not copy passages from existing articles.
+
+Use original wording and interpretation.
+
+For controversial or sensitive subjects, distinguish documented events from opinion and avoid misleading framing.
+
+Create an editorial standards page that describes the actual intended editorial process, including:
+- Fact-checking
+- Source selection
+- Distinguishing fact from opinion
+- Corrections
+- Image sourcing
+- Responsible storytelling
+
+Do not claim that a formal review process exists unless it has actually been implemented.
+
+---
+
+# 20. ANALYTICS AND GROWTH MARKETING FOUNDATION
+
+This website is also a practical growth marketing project.
+
+Its implementation should allow performance to be measured and improved.
+
+Build the website with clear integration points for:
+- Google Analytics 4
+- Google Search Console
+- Meta Pixel
+- Meta advertising campaigns
+- UTM-based campaign tracking
+- Newsletter conversions
+- Content engagement measurement
+
+Do not fabricate analytics results.
+
+Do not display fake traffic, engagement numbers or conversion statistics.
+
+## Google Analytics 4
+
+Provide a clean configuration point for the GA4 Measurement ID.
+
+Use an environment variable or equivalent configuration rather than scattering the ID throughout the code.
+
+For example:
+
+`VITE_GA_MEASUREMENT_ID`
+
+Adapt the naming convention to the chosen framework.
+
+If the ID is missing, analytics must remain safely disabled without breaking the website.
+
+Implement or document suitable events, where relevant:
+- `page_view`
+- `view_story`
+- `scroll_depth`
+- `newsletter_signup`
+- `contact_form_submit`
+- `internal_story_click`
+
+Use meaningful event parameters where appropriate.
+
+Do not send personal information to analytics.
+
+Avoid duplicate page-view events.
+
+Clearly distinguish an event being implemented in code from an event being verified in a live analytics property.
+
+## Google Search Console
+
+Prepare the site for Search Console verification.
+
+Document:
+- Domain verification
+- Sitemap submission
+- URL inspection
+- Indexing checks
+- Performance reporting
+- Query and page analysis
+
+Do not claim that verification has been completed unless it has actually been done.
+
+## Meta Pixel
+
+Provide a clean configuration point for the Meta Pixel ID.
+
+For example:
+
+`VITE_META_PIXEL_ID`
+
+Adapt this to the selected stack.
+
+Implement the integration only when a real Pixel ID is supplied and the relevant consent requirements have been addressed.
+
+Potential events:
+- PageView
+- ViewContent
+- Lead
+
+Use the event that genuinely corresponds to the action.
+
+Do not fire a Lead event merely because a page loaded.
+
+Do not fabricate conversions.
+
+Do not send email addresses or other sensitive personal data through event parameters.
+
+If the Pixel has not been configured, document the steps needed to connect it.
+
+## UTM tracking
+
+Ensure the site can be used with campaign URLs containing parameters such as:
+- `utm_source`
+- `utm_medium`
+- `utm_campaign`
+- `utm_content`
+
+Do not strip these parameters before the analytics system has a chance to attribute the visit.
+
+Preserve clean canonical URLs so campaign parameters do not create duplicate canonical pages.
+
+Document an example of how a future Meta campaign could use consistent UTM naming.
+
+## Growth marketing measurement
+
+Prepare the website for testing:
+- Which story attracts the most relevant visitors?
+- Which social creative drives the most engaged sessions?
+- Which landing page encourages readers to explore another article?
+- Which stories lead to newsletter subscriptions?
+- Which audiences engage with forgotten-legends content?
+- Which organic queries bring visitors to specific articles?
+
+These are future questions to investigate, not conclusions to hard-code.
+
+---
+
+# 21. META ADVERTISING READINESS
+
+Prepare the website for a small, measurable Meta Ads experiment.
+
+Do not create fake advertising results or claim that campaigns have run.
+
+The website should have:
+- Clear article landing pages
+- Strong featured images
+- Readable mobile layouts
+- Fast loading
+- Meaningful page titles
+- A clear reason to read
+- Related-story links
+- Functional newsletter and contact interfaces where configured
+- Analytics integration points
+
+Support campaign URLs with UTM parameters.
+
+Make it easy to direct visitors to a particular article rather than sending every campaign to the homepage.
+
+Potential initial campaign themes:
+- An iconic cricket moment
+- A forgotten player story
+- An unfinished career
+- A former IPL franchise
+
+These are hypotheses to test.
+
+Do not assume one theme will outperform the others.
+
+Do not introduce aggressive pop-ups, fake scarcity, misleading promises or intrusive advertising.
+
+---
+
+# 22. PERFORMANCE AND ACCESSIBILITY
+
+Build a fast, accessible website.
+
+Implement:
+- Semantic HTML
+- Keyboard-accessible navigation
+- Visible focus states
+- Accessible colour contrast
+- Appropriate form labels
+- Useful validation messages
+- Descriptive link text
+- Meaningful image alt text
+- Responsive images
+- Optimised image sizes
+- Lazy loading for appropriate below-the-fold images
+- Minimal unnecessary JavaScript
+- Efficient fonts
+- Proper heading hierarchy
+- Reduced-motion support where relevant
+
+Avoid:
+- Large unoptimised hero images
+- Excessive animation
+- Layout shifts
+- Unnecessary third-party scripts
+- Blocking resources without a reason
+- Text embedded in images as a substitute for accessible content
+
+Use a visual and functional hierarchy that works for keyboard, touch and pointer users.
+
+Aim for strong Core Web Vitals, but do not claim specific scores without testing the deployed site.
+
+---
+
+# 23. CONTACT FORM AND NEWSLETTER FUNCTIONALITY
+
+Build working user interfaces for both forms.
+
+## Contact form
+
+Include:
+- Name
+- Email
+- Subject or enquiry type
+- Message
+- Submit button
+- Validation
+- Loading state
+- Success state
+- Error state
+
+Use appropriate backend validation and abuse protection if a real submission service is configured.
+
+Do not expose private API keys in frontend code.
+
+If a backend is not configured, make the limitation clear and document how to connect a real service.
+
+## Newsletter
+
+Include:
+- Email field
+- Subscribe button
+- Consent information where required
+- Validation
+- Success and error feedback
+
+Connect to a real newsletter provider only when credentials and configuration are available.
+
+Do not claim that a subscription has been stored if no service exists.
+
+Do not store personal data in insecure client-side storage as a substitute for a proper backend.
+
+---
+
+# 24. PRIVACY AND COMPLIANCE
+
+Create a privacy policy that accurately reflects the implemented website.
+
+Consider:
+- Analytics
+- Advertising pixels
+- Contact form submissions
+- Newsletter subscriptions
+- Cookies and similar technologies
+- Data retention
+- Third-party services
+- Contact details for privacy requests
+
+Do not claim legal compliance merely because a privacy policy exists.
+
+If analytics and advertising scripts require consent under applicable rules, implement an appropriate consent mechanism and document its configuration.
+
+Do not collect more personal data than necessary.
+
+Do not add a newsletter provider, analytics tool or advertising script without making the implementation and configuration clear.
+
+Do not invent a registered business name, address or legal identity.
+
+---
+
+# 25. DEVELOPMENT AND IMPLEMENTATION REQUIREMENTS
+
+Before coding, assess the best practical architecture supported by Google AI Studio and the deployment environment.
+
+Use a maintainable framework and reusable components.
+
+If the project environment supports React and TypeScript, use them where appropriate.
+
+Structure the project so that:
+- Routes are clear
+- Content is separated from presentation
+- Article metadata is centrally managed
+- Shared layouts are reusable
+- SEO metadata is generated consistently
+- Integrations are configured through environment variables
+- Forms have clear states
+- Components are responsive
+- The project can be built and deployed reliably
+
+Do not create an unnecessarily complicated architecture for a five-article publication.
+
+Prefer a simple, maintainable implementation that can grow as more stories are added.
+
+If a backend is needed for a feature, use a suitable backend or external service rather than pretending that frontend-only code provides secure server-side functionality.
+
+Do not expose secret keys in browser code.
+
+Do not leave critical functionality as TODO comments when it can be implemented in the current environment.
+
+For functionality that genuinely requires external configuration, provide explicit setup instructions.
+
+---
+
+# 26. FUNCTIONAL ACCEPTANCE CRITERIA
+
+The project is not complete merely because the homepage looks attractive.
+
+Verify the following.
+
+## Navigation
+
+- Every navigation link works.
+- The mobile menu opens and closes.
+- The active route is represented appropriately.
+- No links point to nonexistent pages.
+
+## Content
+
+- All five launch articles are complete.
+- Article cards link to the correct routes.
+- The stories index displays the published articles.
+- Category pages display the correct content.
+- Related-story links work.
+- No placeholder article is presented as a finished story.
+- Important facts are supported by credible sources.
+
+## SEO
+
+- Every indexable page has a unique title.
+- Every indexable page has a unique meta description.
+- Every page has a canonical URL.
+- Open Graph metadata is page-specific.
+- Article structured data is implemented appropriately.
+- Sitemap and robots.txt exist.
+- Drafts are excluded from indexing and the sitemap.
+- All published articles are reachable through internal links.
+- No placeholder domain or image URLs remain in production.
+- No contradictory indexing directives exist.
+
+## Forms
+
+- Inputs have appropriate labels.
+- Validation works.
+- Success and error states are handled.
+- Missing backend configuration does not create fake success messages.
+
+## Responsive behaviour
+
+- Desktop layout works.
+- Mobile layout works.
+- No horizontal overflow exists.
+- Images scale correctly.
+- Buttons are usable.
+- Article text is readable.
+- Navigation remains functional.
+
+## Performance
+
+- Images are optimised.
+- Below-the-fold images use appropriate lazy loading.
+- The hero image is handled appropriately.
+- Unnecessary scripts are removed.
+- The deployed site is tested rather than assumed to be fast.
+
+## Analytics
+
+- Integration points exist.
+- Missing IDs do not break the site.
+- Events correspond to genuine actions.
+- No fake analytics data is displayed.
+- Configuration instructions are documented.
+
+---
+
+# 27. REQUIRED PROJECT DOCUMENTATION
+
+Create a README that explains the actual implementation.
+
+Include:
+
+## Project overview
+Explain what Tales from the Game is and what the website does.
+
+## Technology stack
+List the actual technologies used.
+
+## Running the project
+Provide accurate installation and development instructions.
+
+## Building and deploying
+Explain how to build and deploy the project using the selected environment.
+
+## Routes
+List every implemented route.
+
+## Content management
+Explain how to edit existing articles and add future stories.
+
+## SEO implementation
+Explain:
+- Where page titles are defined
+- Where meta descriptions are defined
+- How canonical URLs are generated
+- How structured data is implemented
+- How sitemap.xml is generated
+- How robots.txt is configured
+- How to update the metadata for new articles
+
+## Analytics
+Explain how to configure GA4, Meta Pixel and campaign tracking.
+
+## Search Console
+Explain domain verification, sitemap submission and indexation checks.
+
+## Forms
+Explain the actual contact and newsletter implementation and any required external setup.
+
+## Environment variables
+List required and optional variables without including real secret values.
+
+## Known limitations
+Clearly document any features that require external credentials or have not yet been configured.
+
+## SEO research worksheet
+Create a practical worksheet covering:
+- Keyword
+- Search intent
+- Target article
+- Secondary keywords
+- SEO title
+- Meta description
+- H1
+- H2 structure
+- Internal links
+- Source requirements
+- Research status
+- Search volume, if later verified
+- Keyword difficulty, if later verified
+- Date of validation
+
+Do not invent research data to fill missing fields.
+
+---
+
+# 28. FINAL BUILD INSTRUCTIONS
+
+Execute the project rather than returning another plan.
+
+Follow this order:
+
+1. Establish the project structure.
+2. Implement the visual design system.
+3. Build the global header and footer.
+4. Build the homepage.
+5. Build the Stories index and category pages.
+6. Write and implement all five complete launch articles.
+7. Implement the About, Contact, Editorial Standards and Privacy Policy pages.
+8. Implement page-specific SEO metadata.
+9. Implement structured data.
+10. Generate sitemap.xml and robots.txt.
+11. Implement internal linking.
+12. Add analytics and Meta Pixel configuration points.
+13. Implement the contact and newsletter interfaces.
+14. Make all routes responsive.
+15. Run the available build and type checks.
+16. Fix broken links, runtime errors and layout issues.
+17. Test metadata, canonical URLs and indexability.
+18. Test mobile navigation and forms.
+19. Remove placeholders that should not appear in production.
+20. Produce the README and SEO research worksheet.
+
+If an important implementation decision is not specified, choose a sensible, maintainable solution that preserves the visual direction and project objectives.
+
+Do not stop after creating the homepage.
+
+Do not replace the five required articles with summaries.
+
+Do not create non-functional buttons simply to complete the visual layout.
+
+Do not claim that Google has indexed the site, that analytics is collecting data, or that forms are receiving submissions unless these have been verified.
+
+The final result must be a cohesive, responsive cricket storytelling website with a distinctive editorial identity, five complete launch articles, implemented on-page SEO, a technical SEO foundation and clear next steps for deployment and growth measurement.
+
+**Build Tales from the Game as a real publication that can be deployed, tested, measured and improved.**

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <rect width="64" height="64" rx="14" fill="#244936" />
+  <circle cx="32" cy="32" r="22" fill="#B89558" stroke="#F5F1E8" stroke-width="2" />
+  <!-- Cricket ball seam stitches -->
+  <path d="M 32 10 Q 38 32 32 54" stroke="#F5F1E8" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-dasharray="2 3" />
+  <path d="M 32 10 Q 26 32 32 54" stroke="#F5F1E8" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-dasharray="2 3" />
+  <!-- Elegant brand serif initial -->
+  <text x="32" y="38" font-family="'Playfair Display', Georgia, serif" font-size="20" font-weight="bold" fill="#080B12" text-anchor="middle">T</text>
+</svg>
